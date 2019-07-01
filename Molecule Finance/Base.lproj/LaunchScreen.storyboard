@@ -18,27 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="u4k-tl-3eV">
-                                <rect key="frame" x="1" y="226" width="412" height="440"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u4k-tl-3eV">
+                                <rect key="frame" x="1" y="257" width="412" height="382"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Molecule Finance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwR-dZ-u0l">
-                                        <rect key="frame" x="20" y="0.0" width="372" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Molecule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwR-dZ-u0l">
+                                        <rect key="frame" x="109" y="0.0" width="194" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="l4w-mK-J5R">
-                                        <rect key="frame" x="0.0" y="100" width="412" height="340"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="l4w-mK-J5R">
+                                        <rect key="frame" x="50" y="70" width="312" height="312"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="312" id="yc2-T9-wFI"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="l4w-mK-J5R" firstAttribute="leading" secondItem="u4k-tl-3eV" secondAttribute="leading" constant="50" id="EDK-2G-5Mg"/>
+                                    <constraint firstAttribute="trailing" secondItem="l4w-mK-J5R" secondAttribute="trailing" constant="50" id="JJR-Zc-rmU"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="u4k-tl-3eV" secondAttribute="bottom" constant="230" id="1Dg-Ab-yyW"/>
-                            <constraint firstItem="u4k-tl-3eV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="182" id="2QK-vM-WuZ"/>
                             <constraint firstItem="u4k-tl-3eV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="587-HS-nRj"/>
                             <constraint firstAttribute="trailing" secondItem="u4k-tl-3eV" secondAttribute="trailing" constant="1" id="G9J-As-Djh"/>
+                            <constraint firstItem="u4k-tl-3eV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LTd-Rt-VVX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
