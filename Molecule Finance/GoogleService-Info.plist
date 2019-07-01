@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>515065711704-uk0jo16iq9sotelum53m2i7780l1u101.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.515065711704-uk0jo16iq9sotelum53m2i7780l1u101</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDGFcj1QGz2NeMb_0_bYh-4NR4S1rFJPQ0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>515065711704</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rushabhnagori.Molecule-Finance</string>
+	<key>PROJECT_ID</key>
+	<string>molecule-finance</string>
+	<key>STORAGE_BUCKET</key>
+	<string>molecule-finance.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:515065711704:ios:b0e1c9fbd6be1c0c</string>
+	<key>DATABASE_URL</key>
+	<string>https://molecule-finance.firebaseio.com</string>
+</dict>
+</plist>
