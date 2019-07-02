@@ -48,6 +48,7 @@ class Signin: UIViewController {
                         messageAppearence.titleColor = .white
                         messageAppearence.messageColor = .lightGray
                         self.present(popup, animated: true, completion: nil)
+                        self.password.text = ""
                     case .userDisabled:
                         let popup = PopupDialog(title: "User disabled", message: "Cannot log you in because your account has been disabled.")
                         let okayButton = DefaultButton(title: "Okay", action: {
@@ -82,5 +83,16 @@ class Signin: UIViewController {
         }
     }
     
+    @IBAction func forgotPassword(_ sender: Any) {
+        performSegue(withIdentifier: "forgotPassword", sender: self)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if email.text != ""{
+            if segue.identifier == "forgotPassword"{
+                let destinationVC = segue.destination as! ForgotPassword
+                destinationVC.emailPassedOver = email.text!
+            }
+        }
+    }
 }

@@ -14,6 +14,7 @@ import SVProgressHUD
 import PopupDialog
 
 class ForgotPassword: UIViewController {
+    var emailPassedOver : String = ""
     @IBOutlet weak var email: UITextField!
     @IBAction func resetPassword(_ sender: Any) {
         SVProgressHUD.show()
@@ -34,8 +35,13 @@ class ForgotPassword: UIViewController {
             }
             else{
                 SVProgressHUD.dismiss()
-                self.performSegue(withIdentifier: "forgotPassword", sender: self)
+                self.performSegue(withIdentifier: "resetPassword", sender: self)
             }
+        }
+    }
+    override func viewDidLoad() {
+        if emailPassedOver != ""{
+            email.text = emailPassedOver
         }
     }
 }
