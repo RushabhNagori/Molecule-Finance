@@ -11,10 +11,12 @@
 		9B3AA7E622CA7AA600055B25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AA7E522CA7AA600055B25 /* GoogleService-Info.plist */; };
 		9B635BAF22C8058D002A46E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B635BAE22C8058D002A46E8 /* AppDelegate.swift */; };
 		9B635BB122C8058D002A46E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B635BB022C8058D002A46E8 /* ViewController.swift */; };
-		9B635BB422C8058D002A46E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B635BB222C8058D002A46E8 /* Main.storyboard */; };
 		9B635BB722C8058D002A46E8 /* Molecule_Finance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B635BB522C8058D002A46E8 /* Molecule_Finance.xcdatamodeld */; };
 		9B635BB922C8058D002A46E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B635BB822C8058D002A46E8 /* Assets.xcassets */; };
 		9B635BBC22C8058D002A46E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B635BBA22C8058D002A46E8 /* LaunchScreen.storyboard */; };
+		9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */; };
+		9BC7CB2F22CADB22004A01CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC7CB2D22CADB22004A01CC /* Main.storyboard */; };
+		9BD73D1222CAB74300E048DE /* SignupEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD73D1122CAB74300E048DE /* SignupEmail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +26,13 @@
 		9B635BAB22C8058D002A46E8 /* Molecule Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Molecule Finance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B635BAE22C8058D002A46E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B635BB022C8058D002A46E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B635BB322C8058D002A46E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B635BB622C8058D002A46E8 /* Molecule_Finance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Molecule_Finance.xcdatamodel; sourceTree = "<group>"; };
 		9B635BB822C8058D002A46E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B635BBB22C8058D002A46E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B635BBD22C8058D002A46E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPassword.swift; sourceTree = "<group>"; };
+		9BC7CB2E22CADB22004A01CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BD73D1122CAB74300E048DE /* SignupEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmail.swift; sourceTree = "<group>"; };
 		A824FD4910AC4A5DA6232D35 /* Pods-Molecule Finance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Molecule Finance.release.xcconfig"; path = "Target Support Files/Pods-Molecule Finance/Pods-Molecule Finance.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,16 +78,26 @@
 		9B635BAD22C8058D002A46E8 /* Molecule Finance */ = {
 			isa = PBXGroup;
 			children = (
+				9BD73D1322CAB75E00E048DE /* View Controllers */,
 				9B635BAE22C8058D002A46E8 /* AppDelegate.swift */,
-				9B635BB022C8058D002A46E8 /* ViewController.swift */,
-				9B635BB222C8058D002A46E8 /* Main.storyboard */,
 				9B635BB822C8058D002A46E8 /* Assets.xcassets */,
+				9BC7CB2D22CADB22004A01CC /* Main.storyboard */,
 				9B635BBA22C8058D002A46E8 /* LaunchScreen.storyboard */,
 				9B635BBD22C8058D002A46E8 /* Info.plist */,
 				9B3AA7E522CA7AA600055B25 /* GoogleService-Info.plist */,
 				9B635BB522C8058D002A46E8 /* Molecule_Finance.xcdatamodeld */,
 			);
 			path = "Molecule Finance";
+			sourceTree = "<group>";
+		};
+		9BD73D1322CAB75E00E048DE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B635BB022C8058D002A46E8 /* ViewController.swift */,
+				9BD73D1122CAB74300E048DE /* SignupEmail.swift */,
+				9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		DD0433462270BF9679F6B04F /* Frameworks */ = {
@@ -157,7 +171,7 @@
 				9B3AA7E622CA7AA600055B25 /* GoogleService-Info.plist in Resources */,
 				9B635BBC22C8058D002A46E8 /* LaunchScreen.storyboard in Resources */,
 				9B635BB922C8058D002A46E8 /* Assets.xcassets in Resources */,
-				9B635BB422C8058D002A46E8 /* Main.storyboard in Resources */,
+				9BC7CB2F22CADB22004A01CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,27 +226,29 @@
 			files = (
 				9B635BB122C8058D002A46E8 /* ViewController.swift in Sources */,
 				9B635BAF22C8058D002A46E8 /* AppDelegate.swift in Sources */,
+				9BD73D1222CAB74300E048DE /* SignupEmail.swift in Sources */,
 				9B635BB722C8058D002A46E8 /* Molecule_Finance.xcdatamodeld in Sources */,
+				9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B635BB222C8058D002A46E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B635BB322C8058D002A46E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9B635BBA22C8058D002A46E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9B635BBB22C8058D002A46E8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC7CB2D22CADB22004A01CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC7CB2E22CADB22004A01CC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
