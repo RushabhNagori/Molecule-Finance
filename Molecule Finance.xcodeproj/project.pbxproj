@@ -96,9 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				9B635BB022C8058D002A46E8 /* ViewController.swift */,
-				9B94516522CBBD7100B482A4 /* Signin.swift */,
 				9BD73D1122CAB74300E048DE /* SignupEmail.swift */,
 				9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */,
+				9B94516522CBBD7100B482A4 /* Signin.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

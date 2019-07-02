@@ -11,14 +11,17 @@ import UIKit
 import FirebaseAuth
 import Firebase
 import PopupDialog
+import SVProgressHUD
 
 class SignupPassword: UIViewController {
     var newUserEmail : String?
     
     @IBOutlet weak var newPassword: UITextField!
     @IBAction func confirmPressed(_ sender: Any) {
+        SVProgressHUD.show()
         Auth.auth().createUser(withEmail: newUserEmail!, password: newPassword.text!) { (user, error) in
             if error != nil {
+                SVProgressHUD.dismiss()
                 if let errCode = AuthErrorCode(rawValue: error!._code) {
                     switch errCode {
                     case .weakPassword:
@@ -49,6 +52,7 @@ class SignupPassword: UIViewController {
                 }
             }
             else {
+                SVProgressHUD.dismiss()
                 print ("Successfully created new user.")
             }
         }

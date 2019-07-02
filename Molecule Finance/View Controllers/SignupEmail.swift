@@ -12,14 +12,17 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import PopupDialog
+import SVProgressHUD
 
 class SignupEmail: UIViewController {
     @IBOutlet weak var email: UITextField!
     
     @IBAction func continueButton(_ sender: Any) {
+        SVProgressHUD.show()
         Auth.auth().createUser(withEmail: email.text!, password: "Password$1") { (user, error) in
             
             if error != nil {
+                SVProgressHUD.dismiss()
                 if let errCode = AuthErrorCode(rawValue: error!._code) {
                     
                     switch errCode {
@@ -74,6 +77,7 @@ class SignupEmail: UIViewController {
             else {
                 Auth.auth().currentUser?.delete(completion: { (error) in
                 })
+                SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "signupEmailToPassword", sender: self)
             }
         }
