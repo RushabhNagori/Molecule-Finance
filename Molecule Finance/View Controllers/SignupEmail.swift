@@ -16,6 +16,7 @@ import SVProgressHUD
 
 class SignupEmail: UIViewController {
     @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var username: UITextField!
     
     @IBAction func continueButton(_ sender: Any) {
         SVProgressHUD.show()
@@ -73,7 +74,7 @@ class SignupEmail: UIViewController {
                     }
                 }
             }
-            
+
             else {
                 Auth.auth().currentUser?.delete(completion: { (error) in
                 })

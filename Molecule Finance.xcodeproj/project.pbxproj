@@ -16,6 +16,8 @@
 		9B635BBC22C8058D002A46E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B635BBA22C8058D002A46E8 /* LaunchScreen.storyboard */; };
 		9B94516622CBBD7100B482A4 /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B94516522CBBD7100B482A4 /* Signin.swift */; };
 		9B94516822CBC77800B482A4 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B94516722CBC77800B482A4 /* ForgotPassword.swift */; };
+		9BC7B90822D3B71000FDF1A4 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7B90722D3B71000FDF1A4 /* Amount.swift */; };
+		9BC7B90A22D419AF00FDF1A4 /* Risk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7B90922D419AF00FDF1A4 /* Risk.swift */; };
 		9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */; };
 		9BC7CB2F22CADB22004A01CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC7CB2D22CADB22004A01CC /* Main.storyboard */; };
 		9BD73D1222CAB74300E048DE /* SignupEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD73D1122CAB74300E048DE /* SignupEmail.swift */; };
@@ -34,6 +36,8 @@
 		9B635BBD22C8058D002A46E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B94516522CBBD7100B482A4 /* Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
 		9B94516722CBC77800B482A4 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		9BC7B90722D3B71000FDF1A4 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		9BC7B90922D419AF00FDF1A4 /* Risk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Risk.swift; sourceTree = "<group>"; };
 		9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPassword.swift; sourceTree = "<group>"; };
 		9BC7CB2E22CADB22004A01CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BD73D1122CAB74300E048DE /* SignupEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmail.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */,
 				9B94516522CBBD7100B482A4 /* Signin.swift */,
 				9B94516722CBC77800B482A4 /* ForgotPassword.swift */,
+				9BC7B90722D3B71000FDF1A4 /* Amount.swift */,
+				9BC7B90922D419AF00FDF1A4 /* Risk.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -233,9 +239,11 @@
 				9B635BB122C8058D002A46E8 /* ViewController.swift in Sources */,
 				9B635BAF22C8058D002A46E8 /* AppDelegate.swift in Sources */,
 				9BD73D1222CAB74300E048DE /* SignupEmail.swift in Sources */,
+				9BC7B90822D3B71000FDF1A4 /* Amount.swift in Sources */,
 				9B635BB722C8058D002A46E8 /* Molecule_Finance.xcdatamodeld in Sources */,
 				9B94516822CBC77800B482A4 /* ForgotPassword.swift in Sources */,
 				9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */,
+				9BC7B90A22D419AF00FDF1A4 /* Risk.swift in Sources */,
 				9B94516622CBBD7100B482A4 /* Signin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

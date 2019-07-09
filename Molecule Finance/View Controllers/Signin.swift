@@ -17,6 +17,7 @@ class Signin: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var signinButton: UIButton!
     @IBAction func signinPressed(_ sender: Any) {
         SVProgressHUD.show()
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
@@ -78,7 +79,7 @@ class Signin: UIViewController {
             }
             else {
                 SVProgressHUD.dismiss()
-                print ("sign in successful!")
+                self.performSegue(withIdentifier: "signinToStart", sender: self)
             }
         }
     }

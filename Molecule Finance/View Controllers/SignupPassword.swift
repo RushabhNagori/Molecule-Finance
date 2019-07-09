@@ -53,7 +53,7 @@ class SignupPassword: UIViewController {
             }
             else {
                 SVProgressHUD.dismiss()
-                print ("Successfully created new user.")
+                self.performSegue(withIdentifier: "signupToStart", sender: self)
             }
         }
     }
