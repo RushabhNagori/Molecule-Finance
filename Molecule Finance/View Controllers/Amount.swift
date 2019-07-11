@@ -21,5 +21,12 @@ class Amount: UIViewController {
             self.ref.child("basics/size").setValue(intAmount)
             performSegue(withIdentifier: "amountToRisk", sender: self)
         }
+        else {
+            let alert = UIAlertController(title: "Invalid Value", message: "Portfolio size must be $500 or greater", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
+                
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }

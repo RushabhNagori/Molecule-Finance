@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 import Firebase
 import FirebaseAuth
-import PopupDialog
 import SVProgressHUD
 
 class Signin: UIViewController {
@@ -26,54 +25,29 @@ class Signin: UIViewController {
                 if let errCode = AuthErrorCode(rawValue: error!._code) {
                     switch errCode{
                     case .invalidEmail:
-                        let popup = PopupDialog(title: "Invalid Email", message: "Please make sure your email is in the right format and try again")
-                        let okayButton = DefaultButton(title: "Okay", action: {
-                        })
-                        popup.addButton(okayButton)
-                        PopupDialogContainerView.appearance().backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.23, alpha: 1.00)
-                        let buttonAppearence = DefaultButton.appearance()
-                        buttonAppearence.titleColor = .white
-                        let messageAppearence = PopupDialogDefaultView.appearance()
-                        messageAppearence.titleColor = .white
-                        messageAppearence.messageColor = .lightGray
-                        self.present(popup, animated: true, completion: nil)
+                        let alert = UIAlertController(title: "Invalid Email", message: "Please make sure your email is in the format address@website.com and try again", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {_ in
+                            
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     case .wrongPassword:
-                        let popup = PopupDialog(title: "Invalid Email/Password combination", message: "Please check your credentials and try again.")
-                        let okayButton = DefaultButton(title: "Okay", action: {
-                        })
-                        popup.addButton(okayButton)
-                        PopupDialogContainerView.appearance().backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.23, alpha: 1.00)
-                        let buttonAppearence = DefaultButton.appearance()
-                        buttonAppearence.titleColor = .white
-                        let messageAppearence = PopupDialogDefaultView.appearance()
-                        messageAppearence.titleColor = .white
-                        messageAppearence.messageColor = .lightGray
-                        self.present(popup, animated: true, completion: nil)
-                        self.password.text = ""
+                        let alert = UIAlertController(title: "Invalid Email/Password combination", message: "Please check your credentials and try again", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {_ in
+                            
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     case .userDisabled:
-                        let popup = PopupDialog(title: "User disabled", message: "Cannot log you in because your account has been disabled.")
-                        let okayButton = DefaultButton(title: "Okay", action: {
-                        })
-                        popup.addButton(okayButton)
-                        PopupDialogContainerView.appearance().backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.23, alpha: 1.00)
-                        let buttonAppearence = DefaultButton.appearance()
-                        buttonAppearence.titleColor = .white
-                        let messageAppearence = PopupDialogDefaultView.appearance()
-                        messageAppearence.titleColor = .white
-                        messageAppearence.messageColor = .lightGray
-                        self.present(popup, animated: true, completion: nil)
+                        let alert = UIAlertController(title: "User disabled", message: "Cannot log you in because your account has been disabled", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {_ in
+                            
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     default:
-                        let popup = PopupDialog(title: "Unknown Error", message: "Unable to log you in, please try again.")
-                        let okayButton = DefaultButton(title: "Okay", action: {
-                        })
-                        popup.addButton(okayButton)
-                        PopupDialogContainerView.appearance().backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.23, alpha: 1.00)
-                        let buttonAppearence = DefaultButton.appearance()
-                        buttonAppearence.titleColor = .white
-                        let messageAppearence = PopupDialogDefaultView.appearance()
-                        messageAppearence.titleColor = .white
-                        messageAppearence.messageColor = .lightGray
-                        self.present(popup, animated: true, completion: nil)
+                        let alert = UIAlertController(title: "Unknown Error", message: "Unable to log you in, please try again", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {_ in
+                            
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
