@@ -12,35 +12,64 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="advancedQuestionsCell" rowHeight="60" id="KGk-i7-Jjw" customClass="questionsCell" customModule="Molecule_Finance" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="advancedQuestionsCell" rowHeight="100" id="KGk-i7-Jjw" customClass="questionsCell" customModule="Molecule_Finance" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="33o-pe-DQo">
-                        <rect key="frame" x="40" y="16" width="240" height="29"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <segments>
-                            <segment title="-2"/>
-                            <segment title="-1"/>
-                            <segment title="0"/>
-                            <segment title="1"/>
-                            <segment title="2"/>
-                        </segments>
-                        <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </segmentedControl>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEA-k4-VV8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-g2-mvx">
+                                <rect key="frame" x="20" y="10" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="33o-pe-DQo">
+                                <rect key="frame" x="20" y="56.5" width="280" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="-2"/>
+                                    <segment title="-1"/>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                </segments>
+                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="ylH-ky-kJG"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="33o-pe-DQo" firstAttribute="leading" secondItem="AEA-k4-VV8" secondAttribute="leading" constant="20" id="1vh-j1-Tb8"/>
+                            <constraint firstItem="cGN-g2-mvx" firstAttribute="leading" secondItem="AEA-k4-VV8" secondAttribute="leading" constant="20" id="QYa-Xm-8na"/>
+                            <constraint firstAttribute="trailing" secondItem="33o-pe-DQo" secondAttribute="trailing" constant="20" id="h46-TH-MbU"/>
+                            <constraint firstItem="cGN-g2-mvx" firstAttribute="top" secondItem="AEA-k4-VV8" secondAttribute="top" constant="10" id="kHO-4C-JcY"/>
+                            <constraint firstItem="33o-pe-DQo" firstAttribute="top" secondItem="cGN-g2-mvx" secondAttribute="bottom" constant="26" id="wd4-BG-NNg"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="33o-pe-DQo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9v3-5X-q44"/>
-                    <constraint firstAttribute="trailing" secondItem="33o-pe-DQo" secondAttribute="trailing" constant="40" id="WFU-Ij-wWZ"/>
-                    <constraint firstItem="33o-pe-DQo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="aiu-9j-4sk"/>
+                    <constraint firstItem="AEA-k4-VV8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6GQ-lh-yxf"/>
+                    <constraint firstAttribute="bottom" secondItem="AEA-k4-VV8" secondAttribute="bottom" id="GJZ-qV-3RO"/>
+                    <constraint firstItem="AEA-k4-VV8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Joe-yA-IEL"/>
+                    <constraint firstAttribute="trailing" secondItem="AEA-k4-VV8" secondAttribute="trailing" id="Mx2-p8-e5k"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="47.826086956521742" y="39.508928571428569"/>
+            <connections>
+                <outlet property="background" destination="AEA-k4-VV8" id="ykQ-5M-txx"/>
+                <outlet property="sectorLabel" destination="cGN-g2-mvx" id="0ZL-9h-RuR"/>
+                <outlet property="sectorSegment" destination="33o-pe-DQo" id="4ZJ-pc-9CI"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="46"/>
         </tableViewCell>
     </objects>
 </document>

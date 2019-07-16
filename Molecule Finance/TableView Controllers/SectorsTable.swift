@@ -10,8 +10,16 @@ import UIKit
 import Firebase
 
 struct customCell {
-    var opened : Bool = false
     var title = String()
+    var value = Int()
+    var path = String()
+    var opened : Bool = false
+    
+    init(title: String, value: Int, path: String){
+        self.title = title
+        self.value = value
+        self.path = path
+    }
 }
 
 class SectorsTable: UITableViewController {
@@ -19,45 +27,51 @@ class SectorsTable: UITableViewController {
     var tableViewData = [customCell]()
     
     override func viewDidLoad() {
-        tableViewData = [customCell(opened: true, title: "Financials"), customCell(opened: false, title: "Technology"), customCell(opened: false, title: "Healthcare"), customCell(opened: false, title: "Utilities")]
-        tableView.register(UINib(nibName: "questionsCell", bundle: nil), forCellReuseIdentifier: "advancedQuestionsCell") 
-    }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return tableViewData.count
+
+        super.viewDidLoad()
+        
+        tableViewData = [customCell(title: "Financials", value: 0, path: "advanced/financials"), customCell(title: "Healthcare", value: 0, path: "advanced/healthcare"), customCell(title: "Technology", value: 0, path: "advanced/technology")]
+        tableViewData.sort {$0.title < $1.title}
+        tableView.register(UINib(nibName: "questionsCell", bundle: nil), forCellReuseIdentifier: "advancedQuestionsCell")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableViewData[section].opened == true{
-            return 2
-        }
-        else {
-            return 1
-        }
+        return tableViewData.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "sectorsCell")
-            cell?.textLabel?.text = tableViewData[indexPath.section].title
-            cell?.textLabel?.textColor = UIColor.white
-            return cell!
-        }
-        else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "advancedQuestionsCell", for: indexPath) as! questionsCell
-            return cell
-        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "advancedQuestionsCell", for: indexPath) as! questionsCell
+        cell.sectorLabel.text = tableViewData[indexPath.row].title
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        
+        return cell
         
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableViewData[indexPath.section].opened = !tableViewData[indexPath.section].opened
+        let cell = tableView.cellForRow(at: indexPath) as! questionsCell
+        
+        tableViewData[indexPath.row].opened.toggle()
+        
+        cell.toggleStatus()
+        
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        
         tableView.deselectRow(at: indexPath, animated: true)
-        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60.0
+        
+        if tableViewData[indexPath.row].opened == true {
+            return 99.5
+        }
+        else {
+            return 40.5
+        }
+
     }
     
 }

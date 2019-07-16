@@ -23,6 +23,7 @@
 		9B67759B22D549AC0059CF0A /* Oil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67759A22D549AC0059CF0A /* Oil.swift */; };
 		9B67759D22D54CF60059CF0A /* USMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67759C22D54CF60059CF0A /* USMisc.swift */; };
 		9B67759F22D5502C0059CF0A /* SoftCommodities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67759E22D5502C0059CF0A /* SoftCommodities.swift */; };
+		9B831C8A22DCE6D4004FB629 /* SectorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B831C8922DCE6D4004FB629 /* SectorsView.swift */; };
 		9B94516622CBBD7100B482A4 /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B94516522CBBD7100B482A4 /* Signin.swift */; };
 		9B94516822CBC77800B482A4 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B94516722CBC77800B482A4 /* ForgotPassword.swift */; };
 		9BC7B90822D3B71000FDF1A4 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7B90722D3B71000FDF1A4 /* Amount.swift */; };
@@ -54,6 +55,7 @@
 		9B67759A22D549AC0059CF0A /* Oil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oil.swift; sourceTree = "<group>"; };
 		9B67759C22D54CF60059CF0A /* USMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USMisc.swift; sourceTree = "<group>"; };
 		9B67759E22D5502C0059CF0A /* SoftCommodities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftCommodities.swift; sourceTree = "<group>"; };
+		9B831C8922DCE6D4004FB629 /* SectorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorsView.swift; sourceTree = "<group>"; };
 		9B94516522CBBD7100B482A4 /* Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
 		9B94516722CBC77800B482A4 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		9BC7B90722D3B71000FDF1A4 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		9B0DB22A22D6468200940574 /* TableView Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9B831C8922DCE6D4004FB629 /* SectorsView.swift */,
 				9B0DB22B22D646B800940574 /* SectorsTable.swift */,
 			);
 			path = "TableView Controllers";
@@ -300,6 +303,7 @@
 				9B94516822CBC77800B482A4 /* ForgotPassword.swift in Sources */,
 				9B67759122D530510059CF0A /* US.swift in Sources */,
 				9B67759722D544F00059CF0A /* PreciousMetals.swift in Sources */,
+				9B831C8A22DCE6D4004FB629 /* SectorsView.swift in Sources */,
 				9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */,
 				9BC7B90A22D419AF00FDF1A4 /* Risk.swift in Sources */,
 				9B94516622CBBD7100B482A4 /* Signin.swift in Sources */,
