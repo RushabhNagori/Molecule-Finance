@@ -28,4 +28,10 @@ class US: UIViewController {
         self.performSegue(withIdentifier: "USToInterestRate", sender: self)
     }
     
+    @IBAction func swipeUp(_ sender: Any) {
+        self.performSegue(withIdentifier: "advancedSectors", sender: self)
+    }
+    @IBAction func advancedPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "advancedSectors", sender: self)
+    }
 }
