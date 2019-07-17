@@ -11,15 +11,21 @@ import Firebase
 
 struct customCell {
     var title = String()
-    var value = Int()
+    var value : Int = 0
     var path = String()
     var opened : Bool = false
+    init(title: String, path: String){
+        self.title = title
+        self.path = path
+    }
     init(title: String, value: Int, path: String){
         self.title = title
         self.value = value
         self.path = path
     }
 }
+
+var advancedGlobal = [customCell]()
 
 class SectorsView: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
@@ -30,7 +36,7 @@ class SectorsView: UIViewController, UITableViewDelegate, UITableViewDataSource,
     var searching : Bool = false
     
     override func viewDidLoad() {
-        tableViewData = [customCell(title: "Financials", value: 0, path: "advanced/financials"), customCell(title: "Healthcare", value: 0, path: "advanced/healthcare"), customCell(title: "Technology", value: 0, path: "advanced/technology"), customCell(title: "Communications", value: 0, path: "advanced/communications"), customCell(title: "Consumer Cyclicals", value: 0, path: "advanced/consumerCyclicals"), customCell(title: "Materials", value: 0, path: "advanced/materials"), customCell(title: "Utilities", value: 0, path: "advanced/utilities"), customCell(title: "Industrials", value: 0, path: "advanced/industrials")]
+        tableViewData = [customCell(title: "Financials", path: "advanced/financials"), customCell(title: "Healthcare", path: "advanced/healthcare"), customCell(title: "Technology", path: "advanced/technology"), customCell(title: "Communications", path: "advanced/communications"), customCell(title: "Consumer Cyclicals", path: "advanced/consumerCyclicals"), customCell(title: "Materials", path: "advanced/materials"), customCell(title: "Utilities", path: "advanced/utilities"), customCell(title: "Industrials", path: "advanced/industrials")]
         table.register(UINib(nibName: "questionsCell", bundle: nil), forCellReuseIdentifier: "advancedQuestionsCell")
         tableViewData.sort {$0.title < $1.title}
         searchBarData = tableViewData
@@ -54,9 +60,11 @@ class SectorsView: UIViewController, UITableViewDelegate, UITableViewDataSource,
         let cell = tableView.dequeueReusableCell(withIdentifier: "advancedQuestionsCell", for: indexPath) as! questionsCell
         if searching {
             cell.sectorLabel.text = searchBarData[indexPath.row].title
+            cell.dataPath = searchBarData[indexPath.row].path
         }
         else {
             cell.sectorLabel.text = tableViewData[indexPath.row].title
+            cell.dataPath = tableViewData[indexPath.row].path
         }
         tableView.beginUpdates()
         tableView.endUpdates()
@@ -68,10 +76,10 @@ class SectorsView: UIViewController, UITableViewDelegate, UITableViewDataSource,
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         if tableViewData[indexPath.row].opened == true {
-            return 99.5
+            return 120
         }
         else {
-            return 40.5
+            return 60
         }
         
     }
@@ -91,11 +99,16 @@ class SectorsView: UIViewController, UITableViewDelegate, UITableViewDataSource,
     
     @IBAction func confirmPressed(_ sender: Any) {
         let ref : DatabaseReference =  Database.database().reference().child(Auth.auth().currentUser!.uid)
-        for index in 0 ... (tableViewData.count - 1) {
-            let cell = table.cellForRow(at: IndexPath(row: index, section: 0)) as! questionsCell
-            let value : Int = Int(cell.sectorSegment.titleForSegment(at: cell.sectorSegment.selectedSegmentIndex)!) ?? 0
-            ref.child(tableViewData[index].path).setValue(value)
-            self.dismiss(animated: true, completion: nil)
+//        for index in 0 ... (tableViewData.count - 1) {
+//            let cell = table.cellForRow(at: IndexPath(row: index, section: 0)) as! questionsCell
+//            let value : Int = Int(cell.sectorSegment.titleForSegment(at: cell.sectorSegment.selectedSegmentIndex)!) ?? 0
+//            if value != 0 {
+//                ref.child(tableViewData[index].path).setValue(value)
+//            }
+//            self.dismiss(animated: true, completion: nil)
+//        }
+        for index in 0 ... (advancedGlobal.count - 1) {
+            ref.child(advancedGlobal[index].path).setValue(advancedGlobal[index].value)
         }
     }
     

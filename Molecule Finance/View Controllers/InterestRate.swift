@@ -21,8 +21,8 @@ class InterestRate: UIViewController {
         ref = Database.database().reference().child(Auth.auth().currentUser!.uid)
         let inflation : Int = Int(inflationSegment.titleForSegment(at: inflationSegment.selectedSegmentIndex)!) ?? 0
         let interestRate : Int = Int(interestRateSegment.titleForSegment(at: interestRateSegment.selectedSegmentIndex)!) ?? 0
-        self.ref.child("portfolio/inflation").setValue(inflation)
-        self.ref.child("portfolio/interestRate").setValue(interestRate)
+        self.ref.child("basics/inflation").setValue(inflation)
+        self.ref.child("basics/interestRate").setValue(interestRate)
         self.performSegue(withIdentifier: "interestToUSMisc", sender: self)
     }
     

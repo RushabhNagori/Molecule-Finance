@@ -22,9 +22,9 @@ class USMisc: UIViewController {
         let municipalBond : Int = Int(municipalBondSegment.titleForSegment(at: municipalBondSegment.selectedSegmentIndex)!) ?? 0
         let realEstate : Int = Int(realEstateSegment.titleForSegment(at: realEstateSegment.selectedSegmentIndex)!) ?? 0
         
-        self.ref.child("portfolio/USDollar").setValue(USDollar)
-        self.ref.child("portfolio/municipalBond").setValue(municipalBond)
-        self.ref.child("portfolio/realEstate").setValue(realEstate)
+        self.ref.child("basics/USDollar").setValue(USDollar)
+        self.ref.child("basics/municipalBond").setValue(municipalBond)
+        self.ref.child("basics/realEstate").setValue(realEstate)
         self.performSegue(withIdentifier: "USMiscToVolatility", sender: self)
     }
 }

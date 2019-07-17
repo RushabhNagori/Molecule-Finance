@@ -22,9 +22,9 @@ class US: UIViewController {
         let economy : Int = Int(economySegment.titleForSegment(at: economySegment.selectedSegmentIndex)!) ?? 0
         let largeCap : Int = Int(largeCapSegment.titleForSegment(at: largeCapSegment.selectedSegmentIndex)!) ?? 0
         let smallCap : Int = Int(smallCapSegment.titleForSegment(at: smallCapSegment.selectedSegmentIndex)!) ?? 0
-        self.ref.child("portfolio/USEconomy").setValue(economy)
-        self.ref.child("portfolio/USLargeCap").setValue(largeCap)
-        self.ref.child("portfolio/USSmallCap").setValue(smallCap)
+        self.ref.child("basics/USEconomy").setValue(economy)
+        self.ref.child("basics/USLargeCap").setValue(largeCap)
+        self.ref.child("basics/USSmallCap").setValue(smallCap)
         self.performSegue(withIdentifier: "USToInterestRate", sender: self)
     }
     

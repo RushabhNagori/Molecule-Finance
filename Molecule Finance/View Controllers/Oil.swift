@@ -17,7 +17,7 @@ class Oil: UIViewController {
     @IBAction func continuePressed(_ sender: Any) {
         ref = Database.database().reference().child(Auth.auth().currentUser!.uid)
         let oil : Int = Int(oilSegment.titleForSegment(at: oilSegment.selectedSegmentIndex)!) ?? 0
-        self.ref.child("portfolio/oil").setValue(oil)
+        self.ref.child("basics/oil").setValue(oil)
         self.performSegue(withIdentifier: "oilToSoftCommodities", sender: self)
     }
 }

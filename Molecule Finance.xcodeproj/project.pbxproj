@@ -26,6 +26,8 @@
 		9B831C8A22DCE6D4004FB629 /* SectorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B831C8922DCE6D4004FB629 /* SectorsView.swift */; };
 		9B94516622CBBD7100B482A4 /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B94516522CBBD7100B482A4 /* Signin.swift */; };
 		9B94516822CBC77800B482A4 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B94516722CBC77800B482A4 /* ForgotPassword.swift */; };
+		9BB4091422DE4EAD008455C7 /* PreciousMetalsAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4091322DE4EAD008455C7 /* PreciousMetalsAdvanced.swift */; };
+		9BB4091622DE7BE6008455C7 /* WorldMarketsAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4091522DE7BE6008455C7 /* WorldMarketsAdvanced.swift */; };
 		9BC7B90822D3B71000FDF1A4 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7B90722D3B71000FDF1A4 /* Amount.swift */; };
 		9BC7B90A22D419AF00FDF1A4 /* Risk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7B90922D419AF00FDF1A4 /* Risk.swift */; };
 		9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */; };
@@ -58,6 +60,8 @@
 		9B831C8922DCE6D4004FB629 /* SectorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorsView.swift; sourceTree = "<group>"; };
 		9B94516522CBBD7100B482A4 /* Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
 		9B94516722CBC77800B482A4 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		9BB4091322DE4EAD008455C7 /* PreciousMetalsAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreciousMetalsAdvanced.swift; sourceTree = "<group>"; };
+		9BB4091522DE7BE6008455C7 /* WorldMarketsAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldMarketsAdvanced.swift; sourceTree = "<group>"; };
 		9BC7B90722D3B71000FDF1A4 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		9BC7B90922D419AF00FDF1A4 /* Risk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Risk.swift; sourceTree = "<group>"; };
 		9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPassword.swift; sourceTree = "<group>"; };
@@ -92,8 +96,10 @@
 		9B0DB22A22D6468200940574 /* TableView Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9B831C8922DCE6D4004FB629 /* SectorsView.swift */,
 				9B0DB22B22D646B800940574 /* SectorsTable.swift */,
+				9B831C8922DCE6D4004FB629 /* SectorsView.swift */,
+				9BB4091322DE4EAD008455C7 /* PreciousMetalsAdvanced.swift */,
+				9BB4091522DE7BE6008455C7 /* WorldMarketsAdvanced.swift */,
 			);
 			path = "TableView Controllers";
 			sourceTree = "<group>";
@@ -304,10 +310,12 @@
 				9B67759122D530510059CF0A /* US.swift in Sources */,
 				9B67759722D544F00059CF0A /* PreciousMetals.swift in Sources */,
 				9B831C8A22DCE6D4004FB629 /* SectorsView.swift in Sources */,
+				9BB4091422DE4EAD008455C7 /* PreciousMetalsAdvanced.swift in Sources */,
 				9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */,
 				9BC7B90A22D419AF00FDF1A4 /* Risk.swift in Sources */,
 				9B94516622CBBD7100B482A4 /* Signin.swift in Sources */,
 				9B67759522D543930059CF0A /* Volatility.swift in Sources */,
+				9BB4091622DE7BE6008455C7 /* WorldMarketsAdvanced.swift in Sources */,
 				9B67759F22D5502C0059CF0A /* SoftCommodities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

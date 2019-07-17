@@ -10,9 +10,11 @@ import UIKit
 
 class questionsCell: UITableViewCell {
     var selectedValue : Int = 0
+    var dataPath : String = ""
     
     @IBAction func segmentChanged(_ sender: Any) {
         selectedValue = Int(sectorSegment.titleForSegment(at: sectorSegment.selectedSegmentIndex)!) ?? 0
+        advancedGlobal.append(customCell(title: sectorLabel.text ?? "", value: selectedValue, path: dataPath))
     }
     
     @IBOutlet weak var background: UIView!

@@ -21,9 +21,12 @@ class WorldMarkets: UIViewController {
         let europe : Int = Int(europeSegment.titleForSegment(at: europeSegment.selectedSegmentIndex)!) ?? 0
         let emergingMarkets : Int = Int(emergingMarketsSegment.titleForSegment(at: emergingMarketsSegment.selectedSegmentIndex)!) ?? 0
         let chinaMarkets : Int = Int(china.titleForSegment(at: china.selectedSegmentIndex)!) ?? 0
-        self.ref.child("portfolio/europe").setValue(europe)
-        self.ref.child("portfolio/emergingMarkets").setValue(emergingMarkets)
-        self.ref.child("portfolio/china").setValue(chinaMarkets)
+        self.ref.child("basics/europe").setValue(europe)
+        self.ref.child("basics/emergingMarkets").setValue(emergingMarkets)
+        self.ref.child("basics/china").setValue(chinaMarkets)
         self.performSegue(withIdentifier: "worldMarketsToGas", sender: self)
+    }
+    @IBAction func advancedPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "countriesAdvanced", sender: self)
     }
 }

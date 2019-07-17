@@ -16,7 +16,7 @@ class Volatility: UIViewController {
     @IBAction func continuePressed(_ sender: Any) {
         ref = Database.database().reference().child(Auth.auth().currentUser!.uid)
         let volatility : Int = Int(volatilitySegment.titleForSegment(at: volatilitySegment.selectedSegmentIndex)!) ?? 0
-        self.ref.child("portfolio/volatility").setValue(volatility)
+        self.ref.child("basics/volatility").setValue(volatility)
         self.performSegue(withIdentifier: "volatilityToPreciousMetals", sender: self)
     }
 }
