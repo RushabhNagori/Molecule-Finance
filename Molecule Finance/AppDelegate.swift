@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if Auth.auth().currentUser != nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "Questions") as! UIViewController
+            let vc = storyboard.instantiateViewController(withIdentifier: "Questions")
             self.window?.rootViewController = vc
         }
         

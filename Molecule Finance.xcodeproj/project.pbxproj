@@ -10,6 +10,8 @@
 		40F54B6DE265F09913544F01 /* Pods_Molecule_Finance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7762E1C5E138A1C443AEC91D /* Pods_Molecule_Finance.framework */; };
 		9B0DB22C22D646B800940574 /* SectorsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0DB22B22D646B800940574 /* SectorsTable.swift */; };
 		9B3AA7E622CA7AA600055B25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B3AA7E522CA7AA600055B25 /* GoogleService-Info.plist */; };
+		9B55A58022E6252E00B28631 /* StockChartDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B55A57E22E6252E00B28631 /* StockChartDisplay.swift */; };
+		9B55A58122E6252E00B28631 /* StockChartDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B55A57F22E6252E00B28631 /* StockChartDisplay.xib */; };
 		9B635BAF22C8058D002A46E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B635BAE22C8058D002A46E8 /* AppDelegate.swift */; };
 		9B635BB122C8058D002A46E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B635BB022C8058D002A46E8 /* ViewController.swift */; };
 		9B635BB722C8058D002A46E8 /* Molecule_Finance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B635BB522C8058D002A46E8 /* Molecule_Finance.xcdatamodeld */; };
@@ -28,6 +30,7 @@
 		9B94516822CBC77800B482A4 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B94516722CBC77800B482A4 /* ForgotPassword.swift */; };
 		9BB4091422DE4EAD008455C7 /* PreciousMetalsAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4091322DE4EAD008455C7 /* PreciousMetalsAdvanced.swift */; };
 		9BB4091622DE7BE6008455C7 /* WorldMarketsAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB4091522DE7BE6008455C7 /* WorldMarketsAdvanced.swift */; };
+		9BB7510F22E62DDE004C6ABA /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB7510E22E62DDE004C6ABA /* HomePage.swift */; };
 		9BC7B90822D3B71000FDF1A4 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7B90722D3B71000FDF1A4 /* Amount.swift */; };
 		9BC7B90A22D419AF00FDF1A4 /* Risk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7B90922D419AF00FDF1A4 /* Risk.swift */; };
 		9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */; };
@@ -42,6 +45,8 @@
 		7762E1C5E138A1C443AEC91D /* Pods_Molecule_Finance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Molecule_Finance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0DB22B22D646B800940574 /* SectorsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorsTable.swift; sourceTree = "<group>"; };
 		9B3AA7E522CA7AA600055B25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B55A57E22E6252E00B28631 /* StockChartDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockChartDisplay.swift; sourceTree = "<group>"; };
+		9B55A57F22E6252E00B28631 /* StockChartDisplay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockChartDisplay.xib; sourceTree = "<group>"; };
 		9B635BAB22C8058D002A46E8 /* Molecule Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Molecule Finance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B635BAE22C8058D002A46E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B635BB022C8058D002A46E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		9B94516722CBC77800B482A4 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		9BB4091322DE4EAD008455C7 /* PreciousMetalsAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreciousMetalsAdvanced.swift; sourceTree = "<group>"; };
 		9BB4091522DE7BE6008455C7 /* WorldMarketsAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldMarketsAdvanced.swift; sourceTree = "<group>"; };
+		9BB7510E22E62DDE004C6ABA /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		9BC7B90722D3B71000FDF1A4 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		9BC7B90922D419AF00FDF1A4 /* Risk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Risk.swift; sourceTree = "<group>"; };
 		9BC7CB2B22CAD5F1004A01CC /* SignupPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPassword.swift; sourceTree = "<group>"; };
@@ -104,6 +110,15 @@
 			path = "TableView Controllers";
 			sourceTree = "<group>";
 		};
+		9B55A58222E6253A00B28631 /* StockChartDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				9B55A57E22E6252E00B28631 /* StockChartDisplay.swift */,
+				9B55A57F22E6252E00B28631 /* StockChartDisplay.xib */,
+			);
+			path = StockChartDisplay;
+			sourceTree = "<group>";
+		};
 		9B635BA222C8058D002A46E8 = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +140,12 @@
 		9B635BAD22C8058D002A46E8 /* Molecule Finance */ = {
 			isa = PBXGroup;
 			children = (
-				9BD73D1322CAB75E00E048DE /* View Controllers */,
+				9BD73D1322CAB75E00E048DE /* Preliminary View Controllers */,
 				9B635BAE22C8058D002A46E8 /* AppDelegate.swift */,
 				9B0DB22A22D6468200940574 /* TableView Controllers */,
 				9BD2BA0A22D4E12500E16ACD /* Questions Cell */,
+				9BB7510D22E62D98004C6ABA /* Home View Controllers */,
+				9B55A58222E6253A00B28631 /* StockChartDisplay */,
 				9B635BB822C8058D002A46E8 /* Assets.xcassets */,
 				9BC7CB2D22CADB22004A01CC /* Main.storyboard */,
 				9B635BBA22C8058D002A46E8 /* LaunchScreen.storyboard */,
@@ -137,6 +154,14 @@
 				9B635BB522C8058D002A46E8 /* Molecule_Finance.xcdatamodeld */,
 			);
 			path = "Molecule Finance";
+			sourceTree = "<group>";
+		};
+		9BB7510D22E62D98004C6ABA /* Home View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BB7510E22E62DDE004C6ABA /* HomePage.swift */,
+			);
+			path = "Home View Controllers";
 			sourceTree = "<group>";
 		};
 		9BD2BA0A22D4E12500E16ACD /* Questions Cell */ = {
@@ -148,7 +173,7 @@
 			path = "Questions Cell";
 			sourceTree = "<group>";
 		};
-		9BD73D1322CAB75E00E048DE /* View Controllers */ = {
+		9BD73D1322CAB75E00E048DE /* Preliminary View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9B635BB022C8058D002A46E8 /* ViewController.swift */,
@@ -167,7 +192,7 @@
 				9B67759A22D549AC0059CF0A /* Oil.swift */,
 				9B67759E22D5502C0059CF0A /* SoftCommodities.swift */,
 			);
-			path = "View Controllers";
+			path = "Preliminary View Controllers";
 			sourceTree = "<group>";
 		};
 		DD0433462270BF9679F6B04F /* Frameworks */ = {
@@ -238,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B55A58122E6252E00B28631 /* StockChartDisplay.xib in Resources */,
 				9B3AA7E622CA7AA600055B25 /* GoogleService-Info.plist in Resources */,
 				9BD2BA0922D4E10F00E16ACD /* questionsCell.xib in Resources */,
 				9B635BBC22C8058D002A46E8 /* LaunchScreen.storyboard in Resources */,
@@ -302,6 +328,7 @@
 				9B67759322D53F110059CF0A /* InterestRate.swift in Sources */,
 				9BD73D1222CAB74300E048DE /* SignupEmail.swift in Sources */,
 				9BC7B90822D3B71000FDF1A4 /* Amount.swift in Sources */,
+				9BB7510F22E62DDE004C6ABA /* HomePage.swift in Sources */,
 				9B635BB722C8058D002A46E8 /* Molecule_Finance.xcdatamodeld in Sources */,
 				9B67759D22D54CF60059CF0A /* USMisc.swift in Sources */,
 				9B0DB22C22D646B800940574 /* SectorsTable.swift in Sources */,
@@ -314,6 +341,7 @@
 				9BC7CB2C22CAD5F1004A01CC /* SignupPassword.swift in Sources */,
 				9BC7B90A22D419AF00FDF1A4 /* Risk.swift in Sources */,
 				9B94516622CBBD7100B482A4 /* Signin.swift in Sources */,
+				9B55A58022E6252E00B28631 /* StockChartDisplay.swift in Sources */,
 				9B67759522D543930059CF0A /* Volatility.swift in Sources */,
 				9BB4091622DE7BE6008455C7 /* WorldMarketsAdvanced.swift in Sources */,
 				9B67759F22D5502C0059CF0A /* SoftCommodities.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 
 
@@ -103,10 +104,14 @@ class WorldMarketAdvanced: UIViewController, UITableViewDelegate, UITableViewDat
 //            }
 //            self.dismiss(animated: true, completion: nil)
 //        }
-        for index in 0 ... (advancedGlobal.count - 1) {
-            ref.child(advancedGlobal[index].path).setValue(advancedGlobal[index].value)
+        SVProgressHUD.show()
+        if advancedGlobal.count > 0 {
+            for index in 0 ... (advancedGlobal.count - 1) {
+                ref.child(advancedGlobal[index].path).setValue(advancedGlobal[index].value)
+            }
+        
         }
-
+        SVProgressHUD.dismiss()
+        _ = navigationController?.popViewController(animated: true)
     }
-    
 }
